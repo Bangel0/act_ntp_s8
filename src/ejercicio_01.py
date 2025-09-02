@@ -10,13 +10,18 @@ Mostrar todos los resultados con print()
 """
 
 
-import pandas as ventas
-VentasDiarias = ventas.Series([300,750,520,360,124,250,100])
+import pandas 
 
-print (VentasDiarias[3])
-print ("---------------------------")
-print(VentasDiarias.mean())
-print ("---------------------------")
-print(VentasDiarias.sort_values())
-print ("---------------------------")
+def VentasDiarias ():
 
+
+    VentasDiarias = pandas.Series([300,750,520,360,124,250,100])
+
+    print (VentasDiarias[3])
+    print ("---------------------------")
+    print(VentasDiarias.mean())
+    print ("---------------------------")
+    print(VentasDiarias.sort_values())
+    print ("---------------------------")
+
+VentasDiarias()

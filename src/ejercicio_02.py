@@ -7,13 +7,30 @@ Mostrar información básica de la Serie
 Calcular estadísticas básicas como suma y promedio"""
 
 
-import  pandas as calificaciones
+import pandas as pd
 
-calificacionesMateria = calificaciones.Series([95,80,75], index= ["Matematicas","Ingles","Quimica"])
+def calificacionesMateria():
+    
+    serie = pd.Series([95, 80, 75], index=["Matematicas", "Ingles", "Quimica"])
+    
+   
+    print(serie["Matematicas"])
+    print("-----------------------")
+    print(serie["Ingles"])
+    print("-----------------------")
+    print(serie["Quimica"])
+    print("-----------------------")
+    
+   
+    print("Información de la Serie:")
+    print(serie)
+    
+    
+    print("Suma:", serie.sum())
+    print("Promedio:", serie.mean())
+    
+    
+    return serie
 
-print(calificacionesMateria["Matematicas"])
-print("-----------------------")
-print(calificacionesMateria["Ingles"])
-print("-----------------------")
-print(calificacionesMateria["Quimica"])
-print("-----------------------")
+
+calificacionesMateria()
