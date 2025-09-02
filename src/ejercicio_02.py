@@ -1,0 +1,19 @@
+# Ejercicio 2: Series con Índices Personalizados
+"""Implementa una función que cree una Serie con datos de calificaciones de estudiantes usando índices personalizados (nombres de materias). La función debe:
+
+Crear una Serie con índices personalizados: pd.Series([85, 92, 78], index=['Matemáticas', 'Ciencias', 'Historia'])
+Acceder a un valor específico por índice: serie['Ciencias']
+Mostrar información básica de la Serie
+Calcular estadísticas básicas como suma y promedio"""
+
+
+import  pandas as calificaciones
+
+calificacionesMateria = calificaciones.Series([95,80,75], index= ["Matematicas","Ingles","Quimica"])
+
+print(calificacionesMateria["Matematicas"])
+print("-----------------------")
+print(calificacionesMateria["Ingles"])
+print("-----------------------")
+print(calificacionesMateria["Quimica"])
+print("-----------------------")
