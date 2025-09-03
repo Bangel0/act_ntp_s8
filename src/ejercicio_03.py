@@ -7,4 +7,26 @@ Multiplicar la Serie de precios por un valor escalar (ejemplo: precios * 1.16 pa
 Mostrar los resultados de todas las operaciones
 Demostrar que las operaciones se realizan elemento por elemento"""
 
+import pandas as pd
+
+def promocion():
+    
+    precios = pd.Series([100, 150, 200])
+    descuentos = pd.Series([10, 20, 15])
+    
+  
+    resta = precios - descuentos
+    precios_iva = precios * 1.16  
+    
+
+    print("Precios originales:\n", precios)
+    print("----------------------------")
+    print("\nDescuentos:\n", descuentos)
+    print("----------------------------")
+    print("\nResta (precios - descuentos):\n", resta)
+    print("----------------------------")
+    print("\nPrecios con IVA (precios * 1.16):\n", precios_iva)
+
+
+promocion()
 
